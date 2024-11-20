@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>"calculadora"</title>
 </head>
 <body>
-    
+    <script>
+        const n1 = Number(prompt('Priemeiro numero: '))
+        const n2 = Number(prompt('Segundo numero: '))
+        const operador = (prompt('escolha um dos seguintes operadores + (adição) - (subtração) / (divisão) * (multiplicação) ^ (potenciação) '))
+        if (isNaN(n1) || isNaN(n2)){
+            'Por favor, insira um número'
+        }
+        else if (operador == "+")
+            {alert(`A soma: ${n1 + n2}`)}
+        else if (operador == '-')
+        {alert(`A subtração: ${n1-n2}`)}
+        else if (operador == '/')
+        {alert(n2 == 0?'Não existe divisão por zero': `A divisão: ${n1 / n2}`)}
+        else if (operador == '*')
+        {alert(`A multiplicação ${n1 * n2}`)}
+        else if (operador == '^')
+        {alert(`A potenciação: ${n1 ** n2}`)}
+        else 
+        {alert('Operação inválida')}
+    </script>
 </body>
 </html>
