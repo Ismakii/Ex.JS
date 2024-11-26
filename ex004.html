@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Par ou Ímpar</title>
+  </head>
+  <body>
+    <h1>IMPAR PAR</h1>
+    <input type="number" name="pi" id="ip" />
+    <input type="button" value="ENVIAR" onclick="imparpar()" />
+    <div id="res">RESULTADO</div>
+    <script>
+      function imparpar() {
+        var valor = document.getElementById("ip").value;
+        var res = document.getElementById("res");
+        valor = Number(valor);
+        if (valor % 2 === 0) {
+          res.innerHTML = `O ${valor} é par`;
+        } else {
+          res.innerHTML = `O ${valor} é ímpar`;
+        }
+      }
+    </script>
+  </body>
+</html>

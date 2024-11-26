@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>idade</title>
+  </head>
+  <body>
+    <h1>MAIOR OU MENOR DE IDADE</h1>
+    <input
+      type="text"
+      name="nome"
+      id="idade"
+      placeholder="digite a sua idade"
+    />
+    <input type="button" value="enviar" id="botao" onclick="defineidade()" />
+    <div id="res">
+      Digite sua idade acima para verificar se você é maior de idade
+    </div>
+    <script>
+      function defineidade() {
+        var idade = document.getElementById("idade").value;
+        var res = document.getElementById("res");
+        idade = Number(idade);
+        if (isNaN(idade) || idade == 0){
+          res.innerHTML = `Por favor, insira um valor válido`
+          return;
+        }
+
+
+        if (idade >= 18) {
+          res.innerHTML = `você é maior de idade`;
+        } else {
+          res.innerHTML = `você é menor de idade`;
+        }
+      }
+    </script>
+  </body>
+</html>
