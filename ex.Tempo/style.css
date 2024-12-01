@@ -1,0 +1,18 @@
+header {
+  text-align: center;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.74);
+}
+section {
+  background-color: #3ca8dead;
+  padding: 1%;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+}
+footer {
+  text-transform: lowercase;
+  text-align: center;
+}
